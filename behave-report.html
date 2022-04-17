@@ -115,11 +115,11 @@ function Collapsible_expandAllFailed()
         </div>
         <div id="summary">
           <p id="totals">
-            <p id="feature_totals">Features: skipped: 2, passed: 1</p>
-            <p id="scenario_totals">Scenarios: skipped: 3, passed: 1</p>
-            <p id="step_totals">Steps: skipped: 7, untested: 2</p>
+            <p id="feature_totals">Features: passed: 1, skipped: 2</p>
+            <p id="scenario_totals">Scenarios: passed: 1, skipped: 3</p>
+            <p id="step_totals">Steps: passed: 1, skipped: 6, untested: 2</p>
           </p>
-          <p id="duration">Finished in 18.7 seconds</p>
+          <p id="duration">Finished in 7.3 seconds</p>
           <div id="expand-collapse">
             <a id="expander" href="#" onclick="Collapsible_expandAll('scenario_steps')">Expand All</a>
             <span> | </span>
@@ -148,7 +148,75 @@ function Collapsible_expandAllFailed()
         <h3 onclick="Collapsible_toggle('scenario_0')">
           <span class="val">Scenario: Test cart total sum functionality</span>
         </h3>
-        <ol class="scenario_steps" id="scenario_0"/>
+        <ol class="scenario_steps" id="scenario_0">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">home: I am a user on emag.ro Home page</span>
+              <small class="step_duration">(2.613s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:4</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>home: I search after &quot;</span>
+                <b>iPhone 11, 64GB, Black</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(2.853s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:16</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>search: I add product to basket &quot;</span>
+                <b>Telefon mobil Apple iPhone 11, 64GB, Black</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(0.094s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/search_steps.py:3</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">search: I click Vezi detalii cos</span>
+              <small class="step_duration">(1.628s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/search_steps.py:7</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">
+                <span>cart: I verify that total price is correct &quot;</span>
+                <b>2.669,99</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(0.088s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/cart_steps.py:4</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
         <span/>
       </div>
       <div class="scenario">
@@ -201,49 +269,7 @@ function Collapsible_expandAllFailed()
         <h3 onclick="Collapsible_toggle('scenario_3')">
           <span class="val">Scenario Outline: Test search functionality -- @1.1 </span>
         </h3>
-        <ol class="scenario_steps" id="scenario_3">
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Given </span>
-              <span class="step val">home: I am a user on emag.ro Home page</span>
-              <small class="step_duration">(1.532s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/home_steps.py:4</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">
-                <span>home: I search after &quot;</span>
-                <b>iphone</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(2.713s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/home_steps.py:15</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Then </span>
-              <span class="step val">
-                <span>search: I verify that results contain search query &quot;</span>
-                <b>iphone</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(0.112s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/search_steps.py:11</span>
-            </div>
-            <span class="embed"/>
-          </li>
-        </ol>
+        <ol class="scenario_steps" id="scenario_3"/>
         <span/>
       </div>
       <div class="scenario">
@@ -252,49 +278,7 @@ function Collapsible_expandAllFailed()
         <h3 onclick="Collapsible_toggle('scenario_4')">
           <span class="val">Scenario Outline: Test search functionality -- @1.2 </span>
         </h3>
-        <ol class="scenario_steps" id="scenario_4">
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Given </span>
-              <span class="step val">home: I am a user on emag.ro Home page</span>
-              <small class="step_duration">(11.075s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/home_steps.py:4</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">
-                <span>home: I search after &quot;</span>
-                <b>samsung</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(3.076s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/home_steps.py:15</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Then </span>
-              <span class="step val">
-                <span>search: I verify that results contain search query &quot;</span>
-                <b>samsung</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(0.220s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/search_steps.py:11</span>
-            </div>
-            <span class="embed"/>
-          </li>
-        </ol>
+        <ol class="scenario_steps" id="scenario_4"/>
         <span/>
       </div>
     </div>

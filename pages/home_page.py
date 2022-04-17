@@ -10,12 +10,16 @@ class HomePage(BasePage):
     INTRA_IN_CONT_BTN = (By.XPATH, '(//a[text()="Intra in cont"])[2]')
     SALUT_MSG = (By.XPATH, '//p/strong[contains(text(), "Salut")]')
     SEARCH_INPUT = (By.ID, 'searchboxTrigger')
+    INTRA_IN_CONT_CLOSE_BTN = (By.XPATH, '(//i[@class="em em-close"]/parent::button)[3]')
 
     def navigate_to_home_page(self):
         self.driver.get('https://www.emag.ro/')
 
     def click_accept_cookies_btn(self):
         self.click_if_present(*self.ACCEPT_COOKIES_BTN)
+
+    def click_intra_in_cont_close_btn(self):
+        self.click_if_present(*self.INTRA_IN_CONT_CLOSE_BTN)
 
     def search_after(self, query):
         self.wait_and_fill_elem(*self.SEARCH_INPUT, query)

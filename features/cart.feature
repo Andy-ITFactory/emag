@@ -2,13 +2,13 @@ Feature: Emag cart feature
 
     Background:
       Given home: I am a user on emag.ro Home page
-      When home: I search after "iphone"
-      When search: I add product to basket "iPhone 11"
+      When home: I search after "iPhone 11, 64GB, Black"
+      When search: I add product to basket "Telefon mobil Apple iPhone 11, 64GB, Black"
       When search: I click Vezi detalii cos
 
     @cart1
     Scenario: Test cart total sum functionality
-      Then cart: I verify that total price is correct "2.769,98"
+      Then cart: I verify that total price is correct "2.669,99"
 
 
     @cart2

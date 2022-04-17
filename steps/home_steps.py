@@ -5,6 +5,7 @@ from behave import *
 def step_impl(context):
     context.home_page.navigate_to_home_page()
     context.home_page.click_accept_cookies_btn()
+    context.home_page.click_intra_in_cont_close_btn()
 
 
 @when('home: I click on contul meu')
