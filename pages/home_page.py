@@ -35,6 +35,16 @@ class HomePage(BasePage):
     def verify_url_message(self):
         self.verify_page_url('https://www.emag.ro/')
 
+    def click_menu_subcategory(self, subcategory_name):
+        self.driver.find_element(By.XPATH, f'//a[text()="{subcategory_name}"]').click()
+
+    def hover_over_menu_category(self, category_name):
+        elem = self.driver.find_element(By.XPATH, f'//span[text()="{category_name}"]')
+        self.hover_by_elem(elem)
+
+
+
+
 
 
 

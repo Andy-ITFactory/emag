@@ -1,6 +1,9 @@
+from selenium.webdriver import ActionChains
+
 from browser import Browser
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from time import sleep
 
 
 class BasePage(Browser):
@@ -46,3 +49,14 @@ class BasePage(Browser):
     def verify_page_url(self, expected_url):
         actual = self.driver.current_url
         self.assertEqual(expected_url, actual, 'URL is incorrect')
+
+    def hover_by_selector(self, by, selector):
+        elem = self.driver.find_element(by, selector)
+        hover = ActionChains(self.driver).move_to_element(elem)
+        hover.perform()
+        sleep(1)
+
+    def hover_by_elem(self, elem):
+        hover = ActionChains(self.driver).move_to_element(elem)
+        hover.perform()
+        sleep(1)

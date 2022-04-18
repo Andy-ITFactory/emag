@@ -27,3 +27,14 @@ def step_impl(context, message):
 def step_impl(context):
     context.home_page.verify_url_message()
 
+
+@when('home: I hover over "{category}"')
+def step_impl(context, category):
+    context.home_page.hover_over_menu_category(category)
+
+
+@when('home: I click subcategory "{subcategory}"')
+def step_impl(context, subcategory):
+    context.home_page.click_menu_subcategory(subcategory)
+
+

@@ -2,7 +2,7 @@ from selenium.webdriver.common.by import By
 from pages.base_page import BasePage
 
 
-class SearchPage(BasePage):
+class ProductsPage(BasePage):
 
     RESULTS_TITLE = (By.XPATH, '//a[@data-zone="title"]')
     VEZI_DETALII_COS_BTN = (By.XPATH, '//a[text()="Vezi detalii cos"]')

@@ -6,7 +6,7 @@ Feature: Emag search feature
     @search
     Scenario Outline: Test search functionality
       When home: I search after "<query>"
-      Then search: I verify that results contain search query "<query>"
+      Then products: I verify that results contain search query "<query>"
 
     Examples:
       | query   |

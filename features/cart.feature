@@ -3,8 +3,8 @@ Feature: Emag cart feature
     Background:
       Given home: I am a user on emag.ro Home page
       When home: I search after "iPhone 11, 64GB, Black"
-      When search: I add product to basket "Telefon mobil Apple iPhone 11, 64GB, Black"
-      When search: I click Vezi detalii cos
+      When products: I add product to basket "Telefon mobil Apple iPhone 11, 64GB, Black"
+      When products: I click Vezi detalii cos
 
     @cart1
     Scenario: Test cart total sum functionality
