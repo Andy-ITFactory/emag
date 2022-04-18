@@ -8,8 +8,9 @@ def before_all(context):
     context.browser = Browser()
     context.home_page = HomePage()
     context.login_page = LoginPage()
-    context.search_page = ProductsPage()
+    context.product_page = ProductsPage()
     context.cart_page = CartPage()
+
 
 def after_all(context):
     context.browser.close()

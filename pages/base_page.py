@@ -57,6 +57,6 @@ class BasePage(Browser):
         sleep(1)
 
     def hover_by_elem(self, elem):
-        hover = ActionChains(self.driver).move_to_element(elem)
-        hover.perform()
+        actions = ActionChains(self.driver).move_to_element(elem)
+        actions.perform()
         sleep(1)

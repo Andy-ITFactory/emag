@@ -25,6 +25,9 @@ class LoginPage(BasePage):
     def click_logo_img(self):
         self.wait_and_click_elem(*self.LOGO_IMG)
 
+    def verify_login_url(self):
+        self.verify_page_url('https://auth.emag.ro/user/login')
+
 
 
 

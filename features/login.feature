@@ -13,5 +13,11 @@ Feature: Emag login feature
     #exercitiu: implementam la clasa test1 din test_scripts
     @login2
     Scenario: If a logged out user wants to buy a product, he has to login first
+      When home: I hover over "Bacanie"
+      When home: I click subcategory "Dulciuri"
+      When products: I add product to basket "Biscuiti"
+      When products: I click Vezi detalii cos
+      When cart: I click checkout button
+      Then login: I verify login page url
 
 

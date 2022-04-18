@@ -117,9 +117,9 @@ function Collapsible_expandAllFailed()
           <p id="totals">
             <p id="feature_totals">Features: skipped: 2, passed: 1</p>
             <p id="scenario_totals">Scenarios: skipped: 4, passed: 1</p>
-            <p id="step_totals">Steps: skipped: 7, untested: 2</p>
+            <p id="step_totals">Steps: skipped: 7, passed: 6, untested: 2</p>
           </p>
-          <p id="duration">Finished in 29.1 seconds</p>
+          <p id="duration">Finished in 9.5 seconds</p>
           <div id="expand-collapse">
             <a id="expander" href="#" onclick="Collapsible_expandAll('scenario_steps')">Expand All</a>
             <span> | </span>
@@ -183,12 +183,102 @@ function Collapsible_expandAllFailed()
         <span/>
       </div>
       <div class="scenario">
-        <span class="scenario_file">features/login.feature:14</span>
+        <span class="scenario_file">features/login.feature:15</span>
         <span class="tag">@login2</span>
         <h3 onclick="Collapsible_toggle('scenario_3')">
           <span class="val">Scenario: If a logged out user wants to buy a product, he has to login first</span>
         </h3>
-        <ol class="scenario_steps" id="scenario_3"/>
+        <ol class="scenario_steps" id="scenario_3">
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Given </span>
+              <span class="step val">home: I am a user on emag.ro Home page</span>
+              <small class="step_duration">(2.969s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:4</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>home: I hover over &quot;</span>
+                <b>Bacanie</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(1.302s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:31</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>home: I click subcategory &quot;</span>
+                <b>Dulciuri</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(1.937s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/home_steps.py:36</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">
+                <span>products: I add product to basket &quot;</span>
+                <b>Biscuiti</b>
+                <span>&quot;</span>
+              </span>
+              <small class="step_duration">(0.549s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/products_steps.py:3</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">products: I click Vezi detalii cos</span>
+              <small class="step_duration">(1.913s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/products_steps.py:7</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">When </span>
+              <span class="step val">cart: I click checkout button</span>
+              <small class="step_duration">(0.872s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/cart_steps.py:16</span>
+            </div>
+            <span class="embed"/>
+          </li>
+          <li class="step passed">
+            <div class="step_name">
+              <span class="keyword">Then </span>
+              <span class="step val">login: I verify login page url</span>
+              <small class="step_duration">(0.005s)</small>
+            </div>
+            <div class="step_file">
+              <span>steps/login_steps.py:17</span>
+            </div>
+            <span class="embed"/>
+          </li>
+        </ol>
         <span/>
       </div>
       <div class="feature">
@@ -210,49 +300,7 @@ function Collapsible_expandAllFailed()
         <h3 onclick="Collapsible_toggle('scenario_4')">
           <span class="val">Scenario Outline: Test search functionality -- @1.1 </span>
         </h3>
-        <ol class="scenario_steps" id="scenario_4">
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Given </span>
-              <span class="step val">home: I am a user on emag.ro Home page</span>
-              <small class="step_duration">(2.369s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/home_steps.py:4</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">
-                <span>home: I search after &quot;</span>
-                <b>iphone</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(2.670s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/home_steps.py:16</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Then </span>
-              <span class="step val">
-                <span>products: I verify that results contain search query &quot;</span>
-                <b>iphone</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(0.121s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/products_steps.py:11</span>
-            </div>
-            <span class="embed"/>
-          </li>
-        </ol>
+        <ol class="scenario_steps" id="scenario_4"/>
         <span/>
       </div>
       <div class="scenario">
@@ -261,49 +309,7 @@ function Collapsible_expandAllFailed()
         <h3 onclick="Collapsible_toggle('scenario_5')">
           <span class="val">Scenario Outline: Test search functionality -- @1.2 </span>
         </h3>
-        <ol class="scenario_steps" id="scenario_5">
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Given </span>
-              <span class="step val">home: I am a user on emag.ro Home page</span>
-              <small class="step_duration">(21.106s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/home_steps.py:4</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">
-                <span>home: I search after &quot;</span>
-                <b>samsung</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(2.753s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/home_steps.py:16</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">Then </span>
-              <span class="step val">
-                <span>products: I verify that results contain search query &quot;</span>
-                <b>samsung</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(0.130s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/products_steps.py:11</span>
-            </div>
-            <span class="embed"/>
-          </li>
-        </ol>
+        <ol class="scenario_steps" id="scenario_5"/>
         <span/>
       </div>
     </div>

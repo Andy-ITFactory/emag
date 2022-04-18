@@ -13,3 +13,7 @@ def step_impl(context, password):
 @when('login: I click emag logo')
 def step_impl(context):
     context.login_page.click_logo_img()
+
+@then('login: I verify login page url')
+def step_impl(context):
+    context.login_page.verify_login_url()
