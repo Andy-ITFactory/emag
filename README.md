@@ -23,4 +23,4 @@ Troubleshoot:\
 Daca nu merge cu pip incercati comanda: py -m pip install selenium\
 Daca nici asa nu merge:\
 File -> Settings -> Click pe Project: [nume_proiect] -> Python Interpreter -> +\
-Cautati 'selenium' -> Install Package\
+Cautati 'selenium' -> Install Package
