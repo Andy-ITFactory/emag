@@ -1,6 +1,6 @@
 Emag BDD Automation Framework
 
-Site tested: emag.to\
+Site tested: emag.ro\
 Design pattern used: page object model\
 Methodology: behavior driven development
 
