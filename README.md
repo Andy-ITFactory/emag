@@ -20,8 +20,14 @@ Happy Testing!\
 Andy
 
 Troubleshoot:\
+a.\
 Daca nu merge cu pip incercati comanda: py -m pip install selenium\
+
+b.\
 Daca nici asa nu merge:\
 File -> Settings -> Click pe Project: [nume_proiect] -> Python Interpreter -> +\
 Cautati 'selenium' -> Install Package\
 La fel si pentru restul librariilor 
+
+c.\
+In ultima instanta, creati voi un proiect nou, instalati cu pip ce trebuie si copiati manual folderele si fisierele necesare. 
