@@ -30,4 +30,8 @@ Cautati 'selenium' -> Install Package\
 La fel si pentru restul librariilor 
 
 c.\
+Click pe tabul de jos 'Python Packages'\
+Cautati si instalati pachetele
+
+d.\
 In ultima instanta, creati voi un proiect nou, instalati cu pip ce trebuie si copiati manual folderele si fisierele necesare. 
