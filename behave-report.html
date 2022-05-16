@@ -117,9 +117,9 @@ function Collapsible_expandAllFailed()
           <p id="totals">
             <p id="feature_totals">Features: skipped: 2, passed: 1</p>
             <p id="scenario_totals">Scenarios: skipped: 4, passed: 1</p>
-            <p id="step_totals">Steps: skipped: 7, passed: 6, untested: 2</p>
+            <p id="step_totals">Steps: skipped: 9, passed: 4, untested: 2</p>
           </p>
-          <p id="duration">Finished in 9.5 seconds</p>
+          <p id="duration">Finished in 6.0 seconds</p>
           <div id="expand-collapse">
             <a id="expander" href="#" onclick="Collapsible_expandAll('scenario_steps')">Expand All</a>
             <span> | </span>
@@ -179,21 +179,12 @@ function Collapsible_expandAllFailed()
         <h3 onclick="Collapsible_toggle('scenario_2')">
           <span class="val">Scenario: Click logo button and return to home</span>
         </h3>
-        <ol class="scenario_steps" id="scenario_2"/>
-        <span/>
-      </div>
-      <div class="scenario">
-        <span class="scenario_file">features/login.feature:15</span>
-        <span class="tag">@login2</span>
-        <h3 onclick="Collapsible_toggle('scenario_3')">
-          <span class="val">Scenario: If a logged out user wants to buy a product, he has to login first</span>
-        </h3>
-        <ol class="scenario_steps" id="scenario_3">
+        <ol class="scenario_steps" id="scenario_2">
           <li class="step passed">
             <div class="step_name">
               <span class="keyword">Given </span>
               <span class="step val">home: I am a user on emag.ro Home page</span>
-              <small class="step_duration">(2.969s)</small>
+              <small class="step_duration">(3.498s)</small>
             </div>
             <div class="step_file">
               <span>steps/home_steps.py:4</span>
@@ -203,15 +194,11 @@ function Collapsible_expandAllFailed()
           <li class="step passed">
             <div class="step_name">
               <span class="keyword">When </span>
-              <span class="step val">
-                <span>home: I hover over &quot;</span>
-                <b>Bacanie</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(1.302s)</small>
+              <span class="step val">home: I click on contul meu</span>
+              <small class="step_duration">(0.826s)</small>
             </div>
             <div class="step_file">
-              <span>steps/home_steps.py:31</span>
+              <span>steps/home_steps.py:11</span>
             </div>
             <span class="embed"/>
           </li>
@@ -219,66 +206,49 @@ function Collapsible_expandAllFailed()
             <div class="step_name">
               <span class="keyword">When </span>
               <span class="step val">
-                <span>home: I click subcategory &quot;</span>
-                <b>Dulciuri</b>
+                <span>login: I set my email &quot;</span>
+                <b>abc@email.com</b>
                 <span>&quot;</span>
               </span>
-              <small class="step_duration">(1.937s)</small>
+              <small class="step_duration">(0.077s)</small>
             </div>
             <div class="step_file">
-              <span>steps/home_steps.py:36</span>
+              <span>steps/login_steps.py:3</span>
             </div>
             <span class="embed"/>
           </li>
           <li class="step passed">
             <div class="step_name">
               <span class="keyword">When </span>
-              <span class="step val">
-                <span>products: I add product to basket &quot;</span>
-                <b>Biscuiti</b>
-                <span>&quot;</span>
-              </span>
-              <small class="step_duration">(0.549s)</small>
+              <span class="step val">login: I click emag logo</span>
+              <small class="step_duration">(1.560s)</small>
             </div>
             <div class="step_file">
-              <span>steps/products_steps.py:3</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">products: I click Vezi detalii cos</span>
-              <small class="step_duration">(1.913s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/products_steps.py:7</span>
-            </div>
-            <span class="embed"/>
-          </li>
-          <li class="step passed">
-            <div class="step_name">
-              <span class="keyword">When </span>
-              <span class="step val">cart: I click checkout button</span>
-              <small class="step_duration">(0.872s)</small>
-            </div>
-            <div class="step_file">
-              <span>steps/cart_steps.py:16</span>
+              <span>steps/login_steps.py:13</span>
             </div>
             <span class="embed"/>
           </li>
           <li class="step passed">
             <div class="step_name">
               <span class="keyword">Then </span>
-              <span class="step val">login: I verify login page url</span>
-              <small class="step_duration">(0.005s)</small>
+              <span class="step val">home: I verify home page url</span>
+              <small class="step_duration">(0.043s)</small>
             </div>
             <div class="step_file">
-              <span>steps/login_steps.py:17</span>
+              <span>steps/home_steps.py:26</span>
             </div>
             <span class="embed"/>
           </li>
         </ol>
+        <span/>
+      </div>
+      <div class="scenario">
+        <span class="scenario_file">features/login.feature:14</span>
+        <span class="tag">@login2</span>
+        <h3 onclick="Collapsible_toggle('scenario_3')">
+          <span class="val">Scenario: If a logged out user wants to buy a product, he has to login first</span>
+        </h3>
+        <ol class="scenario_steps" id="scenario_3"/>
         <span/>
       </div>
       <div class="feature">

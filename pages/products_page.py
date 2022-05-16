@@ -8,7 +8,7 @@ class ProductsPage(BasePage):
     VEZI_DETALII_COS_BTN = (By.XPATH, '//a[text()="Vezi detalii cos"]')
 
     def click_vezi_detalii_cos(self):
-        self.wait_and_click_elem(*self.VEZI_DETALII_COS_BTN)
+        self.wait_and_click_elem_by_selector(*self.VEZI_DETALII_COS_BTN)
 
     def verify_results_contain_text(self, text):
         title_list = self.driver.find_elements(*self.RESULTS_TITLE)

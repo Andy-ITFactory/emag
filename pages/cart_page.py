@@ -18,13 +18,13 @@ class CartPage(BasePage):
         self.assertEqual(actual, expected_price, "Price is incorrect")
 
     def click_sterge_link(self):
-        self.wait_and_click_elem(*self.STERGE_LINK)
+        self.wait_and_click_elem_by_selector(*self.STERGE_LINK)
 
     def verify_empty_cart_msg(self):
-        self.verify_element_is_displayed(*self.COSUL_TAU_ESTE_GOL_MSG)
+        self.verify_element_is_displayed_by_selector(*self.COSUL_TAU_ESTE_GOL_MSG)
 
     def click_checkout_btn(self):
-        self.wait_and_click_elem(*self.CHECKOUT_BTN)
+        self.wait_and_click_elem_by_selector(*self.CHECKOUT_BTN)
 
 
 

@@ -10,7 +10,6 @@ Feature: Emag login feature
       When login: I click emag logo
       Then home: I verify home page url
 
-    #exercitiu: implementam la clasa test1 din test_scripts
     @login2
     Scenario: If a logged out user wants to buy a product, he has to login first
       When home: I hover over "Bacanie"
